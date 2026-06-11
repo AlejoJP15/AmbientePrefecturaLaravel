@@ -1,0 +1,218 @@
+/* ===== WRAPPER DEL LISTADO ===== */
+.archivo-wrapper {
+    max-width: 5000px;
+    margin: 40px auto;
+    background-color: #ffffffe9;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* Contenedor interno */
+.soca-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+/* Encabezado con botón */
+.header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Barra superior: acciones y filtros */
+.summary-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.left-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botón imprimir */
+.print-button {
+    padding: 8px 15px;
+    background-color: #012d54d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.print-button:hover {
+    background-color: #2b6b9c;
+}
+
+/* Selector de registros */
+.records-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #495057;
+    font-size: 14px;
+}
+
+.records-select {
+    padding: 6px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Caja de búsqueda */
+.search-box {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 36px;
+    background-color: white;
+}
+
+.search-box input {
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    width: 180px;
+    font-size: 0.9rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.search-button {
+    padding: 0 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color: #2980b9;
+}
+
+.search-button i {
+    font-size: 0.95rem;
+}
+
+/* Contenedor tabla */
+.tramites-table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Tabla usuarios adaptada */
+.tramites-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 700px; /* para evitar que colapse con muchas columnas */
+}
+
+/* Encabezados */
+.tramites-table th {
+    background-color: #102191db;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Celdas */
+.tramites-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    color: #000;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Filas alternas */
+.tramites-table tr:nth-child(even) {
+    background-color: #d0e6fc3f;
+}
+
+/* Hover en filas */
+.tramites-table tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Fila vacía */
+.empty-row td {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Enlaces dentro de celdas (botones editar y eliminar) */
+.btn-editar, .btn-eliminar {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-editar {
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #a71d2a;
+}
+

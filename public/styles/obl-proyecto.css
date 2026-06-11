@@ -1,0 +1,240 @@
+
+.main-container {
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+}
+/* Contenedor general */
+.obl-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e0e7ff;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  max-width: 3000px;
+  margin: 2rem auto;
+  backdrop-filter: blur(6px);
+}
+
+/* Contenido interno */
+.obl-content {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Encabezado */
+.obl-content h2 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c7d2fe;
+  padding-bottom: 0.5rem;
+}
+
+/* Ajustes visuales extra */
+.obl-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.obl-btn {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.obl-btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #1e40af);
+}
+
+.obl-btn--ghost {
+  background: transparent;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.obl-btn--ghost:hover {
+  background: #eff6ff;
+}
+
+/* Espaciado entre secciones */
+.obl-upload,
+.obl-table,
+.obl-comentarios {
+  margin-top: 1.5rem;
+}
+
+/* Mensajes */
+.msg {
+  margin: .5rem 0;
+  padding: .6rem .8rem;
+  border-radius: .5rem;
+  font-weight: 500;
+}
+.msg--ok {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+.msg--error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+/* Layout */
+.obl-wrapper {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.obl-content {
+  flex: 1;
+}
+
+.obl-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.obl-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: .8rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.obl-label {
+  font-weight: 600;
+  color: #374151;
+}
+.obl-value {
+  margin-top: .3rem;
+}
+.mt {
+  margin-top: .75rem;
+}
+
+/* Detalles */
+.obl-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: .5rem .75rem;
+}
+.obl-key {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Tabla */
+.obl-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: .6rem;
+  overflow: hidden;
+}
+.obl-table th {
+  background: #0ea5e9;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+}
+.obl-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  font-size: .95rem;
+}
+.obl-empty {
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Acciones */
+.obl-actions-cell {
+  white-space: nowrap;
+}
+
+/* Botones */
+.obl-btn {
+  background: #0ea5e9;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .45rem .9rem;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.obl-btn:hover { background: #0284c7; }
+.obl-btn--ghost {
+  background: #f3f4f6;
+  color: #374151;
+}
+.obl-btn--ghost:hover {
+  background: #e5e7eb;
+}
+.obl-btn--danger {
+  background: #dc2626;
+}
+.obl-btn--danger:hover {
+  background: #b91c1c;
+}
+.obl-btn--sm {
+  font-size: .85rem;
+  padding: .35rem .75rem;
+}
+
+/* Subir archivos */
+.obl-upload {
+  margin-bottom: 10px;
+  background: #fff;
+  padding: .75rem 1rem;
+  border-radius: .6rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Errores */
+.obl-error {
+  color: #b00;
+  margin-top: 6px;
+}
+
+/* Comentarios */
+.obl-comentarios {
+  margin-top: 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: .6rem;
+}
+.obl-comentarios textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: .95rem;
+}
+.obl-btns {
+  margin-top: 10px;
+  display: flex;
+  gap: .6rem;
+}

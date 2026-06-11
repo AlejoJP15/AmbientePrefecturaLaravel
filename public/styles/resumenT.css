@@ -1,0 +1,155 @@
+.archivo-wrapper .soca-container {
+    overflow-x: auto;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* ===== WRAPPER ===== */
+.archivo-wrapper {
+    max-width: 5000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== ENCABEZADOS ===== */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #111827;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* ===== Tabla de archivos y obligaciones ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead tr th {
+    background-color: #102191db; /* azul intenso como en tu ejemplo */
+    color: white;                /* texto blanco */
+    padding: 12px 15px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+tbody tr td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5; /* efecto hover */
+}
+
+.empty-row td {
+    text-align: center;
+    color: #6c757d;   /* gris para filas vacías */
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Botones de acciones */
+.obl-btn {
+    background-color: #2563eb; /* azul para botón principal */
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.obl-btn--ghost {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+/* Inputs y textareas */
+input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* Mensajes de éxito y error */
+.success-message {
+    color: #0a7;   /* verde */
+    font-weight: 600;
+}
+
+.error-message {
+    color: #b00;   /* rojo */
+    font-weight: 600;
+}
+
+
+
+/* ===== FORMULARIOS ===== */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ===== MENSAJES ===== */
+div[style*="color:#0a7"] {
+    color: #059669;
+}
+
+div[style*="color:#b00"] {
+    color: #b91c1c;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+/* ===== ENLACES ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

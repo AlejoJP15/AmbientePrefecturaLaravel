@@ -1,0 +1,193 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.usuarios-wrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* ===== TÍTULO ===== */
+.usuarios-wrapper h1 {
+  text-align: center;
+  color: #205a81;
+  margin-bottom: 25px;
+  font-weight: 700;
+  border-bottom: 2px solid #d1e3f0;
+  padding-bottom: 10px;
+}
+
+/* ===== FORMULARIO ===== */
+.usuarios-wrapper form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== TABLA DE CAMPOS ===== */
+.usuarios-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usuarios-wrapper td {
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+.usuarios-wrapper label {
+  font-weight: bold;
+  color: #205a81;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.usuarios-wrapper input[type="text"],
+.usuarios-wrapper input[type="email"],
+.usuarios-wrapper select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #3977a3;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.usuarios-wrapper input[type="text"]:focus,
+.usuarios-wrapper input[type="email"]:focus,
+.usuarios-wrapper select:focus {
+  border-color: #10447c;
+  box-shadow: 0 0 5px rgba(32, 90, 129, 0.3);
+  outline: none;
+}
+
+.usuarios-wrapper input[readonly] {
+  background-color: #f0f0f0;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* ===== BOTONES ===== */
+.usuarios-wrapper button[type="submit"],
+.usuarios-wrapper .btn-cancelar {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* Botón ACTUALIZAR */
+.usuarios-wrapper button[type="submit"] {
+  background: linear-gradient(90deg, #205a81, #10447c);
+  color: white;
+  width: 48%;
+}
+
+.usuarios-wrapper button[type="submit"]:hover {
+  background: linear-gradient(90deg, #10447c, #205a81);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(32, 90, 129, 0.25);
+}
+
+/* Botón CANCELAR */
+.usuarios-wrapper .btn-cancelar {
+  background-color: #dc3545;
+  color: white;
+  width: 48%;
+}
+
+.usuarios-wrapper .btn-cancelar:hover {
+  background-color: #b02a37;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== CONTENEDOR DE BOTONES ===== */
+.usuarios-wrapper tfoot td {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.usuarios-wrapper .botones-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* ===== BOTÓN VOLVER AL LISTADO ===== */
+.volver-menu {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.volver-menu .back-link {
+  display: inline-block;
+  background-color: #e7f2f9;
+  color: #205a81;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #b6d7ec;
+  transition: all 0.3s ease;
+}
+
+.volver-menu .back-link:hover {
+  background-color: #205a81;
+  color: #fff;
+  border-color: #205a81;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ESTILO DE ERRORES ===== */
+.error {
+  color: #d93025;
+  font-size: 13px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .usuarios-wrapper form {
+    padding: 20px;
+  }
+
+  .usuarios-wrapper td {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .usuarios-wrapper td:first-child {
+    margin-top: 12px;
+  }
+
+  .usuarios-wrapper .botones-form {
+    flex-direction: column;
+  }
+
+  .usuarios-wrapper button {
+    width: 100%;
+  }
+
+  .volver-menu {
+    text-align: center;
+  }
+
+  .volver-menu .back-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ===== FIN DEL ARCHIVO ===== */

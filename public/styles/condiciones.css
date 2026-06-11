@@ -1,0 +1,61 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c62828, #1565c0);
+    background-size: cover;
+    color: #212529;
+}
+
+/* Contenedor principal centrado */
+.container-condiciones {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding: 30px;
+}
+
+/* Título principal */
+.container-condiciones h4 {
+    text-align: center;
+    color: #37008c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Imagen/logo centrado */
+.container-condiciones .logo-condiciones {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Subtítulo */
+.container-condiciones h5 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Párrafos del texto */
+.container-condiciones p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .container-condiciones {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .container-condiciones .logo-condiciones {
+        max-width: 150px;
+    }
+}

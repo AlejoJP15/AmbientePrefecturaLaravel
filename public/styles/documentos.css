@@ -1,0 +1,188 @@
+/* ===== WRAPPER REPORTES ===== */
+.reportes-wrapper {
+  background-color: #ffffffe9;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px; /* espacio entre el menú y el contenido */
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Estilos base */
+.soca-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+/* Encabezado */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.system-title {
+    color: #2C3E50;
+    margin: 0;
+    font-size: 24px;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9;
+}
+
+/* Sección de reportes */
+.report-section {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.section-title {
+    color: #2C3E50;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    border-bottom: 1px solid #ECF0F1;
+    padding-bottom: 10px;
+}
+
+/* Tarjeta de filtros */
+.filter-card {
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group h3 {
+    color: #2C3E50;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-group h3 i {
+    margin-right: 10px;
+    color: #3498DB;
+}
+
+/* Opciones de formato */
+.format-options {
+    display: flex;
+    gap: 15px;
+}
+
+.format-option {
+    flex: 1;
+    cursor: pointer;
+}
+
+.format-option input {
+    display: none;
+}
+
+.format-content {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 15px;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.format-option input:checked + .format-content {
+    border-color: currentColor;
+    background-color: rgba(0,0,0,0.03);
+    box-shadow: 0 0 0 1px currentColor;
+}
+
+.format-option i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.format-option.excel {
+    color: #1D6F42;
+}
+
+.format-option.word {
+    color: #2B579A;
+}
+
+.format-option.html {
+    color: #E44D26;
+}
+
+.format-option:hover .format-content {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Selector de estado */
+.state-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    background-color: #FFF;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.state-select:focus {
+    border-color: #3498DB;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Botón de generar */
+.generate-btn {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.generate-btn:hover {
+    background-color: #2980B9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.generate-btn:active {
+    transform: translateY(0);
+}

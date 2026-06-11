@@ -1,0 +1,240 @@
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.91);
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  overflow-x: auto; /* permite scroll horizontal si el contenido es ancho */
+}
+
+.wrapper {
+  width: 100%; /* ocupar todo el ancho del padre */
+  min-width: 100%; /* evitar que se reduzca más */
+}
+.main-container {
+  width: 100%; /* permitir expansión */
+}
+
+
+
+/* Estilos base */
+.soca-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9;
+}
+
+.home-button i {
+    font-size: 1.2rem;
+}
+
+.soca-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Contenedor minimalista */
+.file-upload-minimal {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Botón de selección de archivo */
+.btn-file-input {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.btn-file-input:hover {
+    background-color: #2980b9;
+}
+
+.btn-file-input i {
+    margin-right: 10px;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+/* Nombre del archivo */
+.file-name {
+    display: inline-block;
+    margin-left: 15px;
+    color: #6c757d;
+    font-size: 0.95rem;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+/* Botón de procesar */
+.btn-process {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-process:hover {
+    background-color: #218838;
+}
+
+.btn-process i {
+    margin-right: 10px;
+}
+
+/* styles/catastro.css */
+
+/* Tipografía formal */
+body {
+    font-family: 'Lora', serif; /* Más formal que Montserrat */
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper general */
+.wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezado con botón alineado */
+.header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header-with-button h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f4e79;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #173d60;
+}
+
+/* Línea divisoria */
+.soca-divider {
+    border: none;
+    height: 2px;
+    background-color: #dce3ea;
+    margin: 15px 0;
+}
+
+/* Estilo minimalista para carga de archivos */
+.file-upload-minimal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-file-input {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e8f0fe;
+    color: #1f4e79;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-file-input:hover {
+    background-color: #d0e2fc;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+.file-name {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-process {
+    margin-top: 15px;
+    background-color: #1f4e79;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-process:hover {
+    background-color: #173d60;
+}

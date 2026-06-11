@@ -1,0 +1,164 @@
+/* Contenedor principal */
+.archivo-wrapper {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffffee;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-principal {
+    margin-top: 0;
+}
+
+.selector-actividad {
+    margin: 1rem 0;
+}
+
+.btn-selector,
+.btn-cerrar,
+.map-controls button,
+.btn-guardar {
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-selector:hover,
+.btn-cerrar:hover,
+.map-controls button:hover,
+.btn-guardar:hover {
+    background-color: #e0e7ff;
+    border-color: #2563eb;
+}
+
+.actividad-seleccionada {
+    margin-left: 0.75rem;
+    color: #16a34a;
+}
+
+.panel-selector {
+    display: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.breadcrumbs-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    align-items: center;
+}
+
+.lista-actual {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 0.6rem;
+}
+
+.form-proyecto {
+    margin-top: 1.25rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.55rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ubicacion-grid {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.ubicacion-grid > div {
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.required {
+    color: #dc2626;
+}
+
+.alert-success {
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 0.4rem;
+    color: #065f46;
+}
+
+.error-msg {
+    color: #b91c1c;
+    font-size: 0.875rem;
+}
+
+.map-container {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+}
+
+#mapPicker {
+    height: 380px;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+}
+
+#mapPicker img { max-width: none !important; }
+
+.points-badge {
+    font-size: 0.875rem;
+    color: #374151;
+}
+
+.points-badge strong { color: #111827; }
+
+.map-controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+}
+
+.map-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.btn-guardar {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+}

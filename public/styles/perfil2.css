@@ -1,0 +1,207 @@
+/* === GENERAL === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e2dfdfb7;
+    
+    /* Fondo con degradado semitransparente sobre la imagen */
+    background: 
+        linear-gradient(rgba(240, 242, 245, 0.584), rgba(207, 216, 220, 0.8)), 
+        url("../img/c5.png") no-repeat center center fixed;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* === CONTENEDOR PRINCIPAL === */
+.perfil-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #102191b3; /* Mantener este color como protagonista */
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(10, 21, 91, 0.5);
+    padding: 30px 40px;
+    position: relative;
+}
+
+/* === HEADER DEL SISTEMA === */
+.perfil-container::before {
+    content: "SCCA - Sistema de Control y Calidad Ambiental";
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 12px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* === PERFIL HEADER === */
+.perfil-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.perfil-header img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.input-texto {
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    width: 70%;
+    margin: 5px auto;
+    display: block;
+}
+
+.input-texto:focus {
+    border-bottom-color: #ffffff;
+}
+
+/* === DOS COLUMNAS DE DATOS === */
+.perfil-datos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil-dato {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.perfil-dato h5 {
+    color: #555;
+    margin: 0;
+    width: 40%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* === CAMPOS DE ENTRADA === */
+.input-campo,
+select.input-campo {
+    width: 60%;
+    padding: 8px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-campo:focus,
+select.input-campo:focus {
+    border-color: #0a155b;
+    box-shadow: 0 0 0 2px rgba(10, 21, 91, 0.2);
+}
+
+/* === CAMPOS READONLY === */
+.input-campo[readonly],
+.input-texto[readonly] {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* === BOTONES === */
+.perfil-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.perfil-buttons button,
+.perfil-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.perfil-buttons .btn-editar {
+    background-color: #8fa6e3;
+}
+
+.perfil-buttons .btn-editar:hover {
+    background-color: #081045;
+}
+
+.perfil-buttons .btn-volver {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+.perfil-buttons .btn-volver:hover {
+    background-color: #7f8c8d;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .perfil-datos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .perfil-buttons {
+        text-align: center;
+    }
+    
+}
+
+#password-hints {
+  font-size: 1.1rem;   
+  line-height: 1.8;   
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.2rem;
+}
+
+#password-hints li {
+  color: #ffffff;  
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+
+#password-hints li.ok {
+  color: #20f12b;   
+  text-decoration: line-through;
+}

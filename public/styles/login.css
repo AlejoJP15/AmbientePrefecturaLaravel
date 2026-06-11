@@ -1,0 +1,114 @@
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 50px 0 0; /* espacio arriba */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        
+      /* Imagen de fondo */
+      background: url("../img/chimborazo3.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    
+    /* Capa translúcida encima de la imagen */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(53, 83, 122, 0.618); /* Blanco con opacidad */
+      z-index: -1; /* para que quede detrás del contenido */
+    }
+  
+
+    .login-box {
+      background: white;
+      border-radius: 12px;
+      padding: 110px 30px 30px; /* Aumentamos espacio arriba */
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      position: relative;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      color: #c62828;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .login-box label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+    }
+
+    .login-box input:focus {
+      border-color: #1565c0;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-login {
+      background: #1565c0;
+    }
+
+    .btn-login:hover {
+      background: #0d47a1;
+    }
+
+    .btn-register {
+      background: #c62828;
+    }
+
+    .btn-register:hover {
+      background: #b71c1c;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .logo {
+      position: absolute;
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: 6px solid white;
+      background: white;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
